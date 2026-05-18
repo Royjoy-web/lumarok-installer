@@ -1,0 +1,4 @@
+# Cloudflare Pages — SPA fallback + deep-link paths
+/invite/:token  /?invite=:token#onboarding  302
+/join/:code     /?code=:code#activation     302
+/*              /index.html                 200

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="40" fill="#020617"/>
+  <!-- Outer glow -->
+  <radialGradient id="glow" cx="55%" cy="45%" r="50%">
+    <stop offset="0%" stop-color="#FB923C" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+  </radialGradient>
+  <ellipse cx="96" cy="88" rx="72" ry="72" fill="url(#glow)"/>
+  <!-- Half bulb shape -->
+  <path d="M96 32 C68 32 48 52 48 78 C48 96 58 110 72 118 L72 134 C72 137 74.7 140 78 140 L114 140 C117.3 140 120 137 120 134 L120 118 C134 110 144 96 144 78 C144 52 124 32 96 32 Z" 
+        fill="none" stroke="#FB923C" stroke-width="4" opacity="0.9"/>
+  <!-- Left half fill with gradient -->
+  <clipPath id="leftHalf">
+    <rect x="0" y="0" width="96" height="192"/>
+  </clipPath>
+  <path d="M96 32 C68 32 48 52 48 78 C48 96 58 110 72 118 L72 134 C72 137 74.7 140 78 140 L96 140 L96 32 Z" 
+        fill="#FB923C" opacity="0.85"/>
+  <!-- Filament lines -->
+  <line x1="80" y1="140" x2="80" y2="152" stroke="#FB923C" stroke-width="3" opacity="0.8"/>
+  <line x1="88" y1="140" x2="88" y2="156" stroke="#FB923C" stroke-width="3" opacity="0.8"/>
+  <line x1="96" y1="140" x2="96" y2="158" stroke="#FB923C" stroke-width="3" opacity="0.7"/>
+  <!-- Base lines -->
+  <rect x="78" y="152" width="36" height="5" rx="2" fill="#FB923C" opacity="0.6"/>
+  <rect x="82" y="159" width="28" height="5" rx="2" fill="#FB923C" opacity="0.4"/>
+  <!-- Inner glow line on split -->
+  <line x1="96" y1="32" x2="96" y2="158" stroke="#FACC15" stroke-width="1.5" opacity="0.6"/>
+</svg>
